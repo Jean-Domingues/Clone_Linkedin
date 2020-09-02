@@ -3,6 +3,7 @@ import React from 'react';
 import { Container } from './styles';
 
 import MobileHeader from '../MobileHeader'
+import DesktopHeader from '../DesktopHeader'
 import LeftColumn from '../LeftColumn';
 import MiddleColumn from '../MiddleColumn';
 import RightColumn from '../RightColumn';
@@ -11,6 +12,7 @@ const Layout: React.FC = () => {
   return (
     <Container>
       <MobileHeader />
+      <DesktopHeader />
       <main>
         <LeftColumn /> 
         <MiddleColumn />
