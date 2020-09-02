@@ -7,12 +7,17 @@ import DesktopHeader from '../DesktopHeader'
 import LeftColumn from '../LeftColumn';
 import MiddleColumn from '../MiddleColumn';
 import RightColumn from '../RightColumn';
+import AdBanner from '../AdBanner';
 
 const Layout: React.FC = () => {
   return (
     <Container>
       <MobileHeader />
       <DesktopHeader />
+
+      <span>
+        <AdBanner/>
+      </span>
       <main>
         <LeftColumn /> 
         <MiddleColumn />
