@@ -3,15 +3,17 @@ import React from "react";
 import FeedShare from "./FeedShare";
 import FeedPost from "./FeedPost";
 
-import { Container } from "./styles";
 import LoadingFeedPost from "../Shimmer/LoadingFeedPost";
+import LoadingFeedShare from "../Shimmer/LoadingFeedShare";
+
+import { Container } from "./styles";
 
 const MiddleColumn: React.FC<LoadingProps> = ({ isLoading }) => {
   return (
     <Container className="middle-column">
       {isLoading ? (
         <>
-        {/* <LoadingFeedShare /> */}
+          <LoadingFeedShare />
           <LoadingFeedPost />
           <LoadingFeedPost />
           <LoadingFeedPost />
